@@ -146,13 +146,13 @@
 
                 <Refractored.Controls.CircleImageView
                     android:layout_marginRight="15dp"
-                    android:id="@+id/profileImage"
+                    android:id="@+id/profileImage3"
                     android:src="@drawable/sisteract"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_centerVertical="true"/>
                 <TextView
-                    android:id="@+id/nameText"
+                    android:id="@+id/nameText3"
                     android:layout_toRightOf="@id/profileImage"
                     android:textSize="16sp"
                     android:text="Zazu Zia"
@@ -201,13 +201,13 @@
 
                 <Refractored.Controls.CircleImageView
                     android:layout_marginRight="15dp"
-                    android:id="@+id/profileImage"
+                    android:id="@+id/profileImage2"
                     android:src="@drawable/popsausi"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_centerVertical="true"/>
                 <TextView
-                    android:id="@+id/nameText"
+                    android:id="@+id/nameText4"
                     android:layout_toRightOf="@id/profileImage"
                     android:textSize="16sp"
                     android:text="Gift from Pops"
@@ -216,7 +216,7 @@
                     android:layout_height="wrap_content"/>
                 <TextView
                     android:layout_marginTop="2dp"
-                    android:id="@+id/dateText"
+                    android:id="@+id/dateText2"
                     android:layout_toRightOf="@id/profileImage"
                     android:layout_below="@id/nameText"
                     android:textSize="14sp"
@@ -224,7 +224,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
                 <TextView
-                    android:id="@+id/amountText"
+                    android:id="@+id/amountText2"
                     android:layout_alignParentRight="true"
                     android:textSize="16sp"
                     android:text="$+14,456"
@@ -234,7 +234,7 @@
                     android:layout_height="wrap_content"/>
                 <TextView
                     android:layout_marginTop="2dp"
-                    android:id="@+id/viewText"
+                    android:id="@+id/viewText2"
                     android:layout_below="@id/amountText"
                     android:layout_alignParentRight="true"
                     android:textSize="16sp"
@@ -256,13 +256,13 @@
 
                 <Refractored.Controls.CircleImageView
                     android:layout_marginRight="15dp"
-                    android:id="@+id/profileImage"
+                    android:id="@+id/profileImage1"
                     android:src="@drawable/benchausi"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_centerVertical="true"/>
                 <TextView
-                    android:id="@+id/nameText"
+                    android:id="@+id/nameText1"
                     android:layout_toRightOf="@id/profileImage"
                     android:textSize="16sp"
                     android:text="Deposit From Ausi"
@@ -271,7 +271,7 @@
                     android:layout_height="wrap_content"/>
                 <TextView
                     android:layout_marginTop="2dp"
-                    android:id="@+id/dateText"
+                    android:id="@+id/dateText1"
                     android:layout_toRightOf="@id/profileImage"
                     android:layout_below="@id/nameText"
                     android:textSize="14sp"
@@ -279,7 +279,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
                 <TextView
-                    android:id="@+id/amountText"
+                    android:id="@+id/amountText1"
                     android:layout_alignParentRight="true"
                     android:textSize="16sp"
                     android:text="$+24,456"
@@ -289,7 +289,7 @@
                     android:layout_height="wrap_content"/>
                 <TextView
                     android:layout_marginTop="2dp"
-                    android:id="@+id/viewText"
+                    android:id="@+id/viewText1"
                     android:layout_below="@id/amountText"
                     android:layout_alignParentRight="true"
                     android:textSize="16sp"
