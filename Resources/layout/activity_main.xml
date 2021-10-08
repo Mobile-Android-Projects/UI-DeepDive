@@ -1,7 +1,334 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent">
-</RelativeLayout>
+
+    <!--Section One-->
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.22">
+        <RelativeLayout
+            android:background="@drawable/roundededges"
+            android:elevation="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:padding="10dp"
+            android:layout_centerInParent="true">
+            <Refractored.Controls.CircleImageView
+                android:layout_marginRight="15dp"
+                android:id="@+id/profileImage"
+                android:src="@drawable/dadbaby"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_toRightOf="@id/profileImage"
+                android:textSize="16sp"
+                android:text="Tony Maina"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/locationText"
+                android:layout_toRightOf="@id/profileImage"
+                android:layout_below="@id/nameText"
+                android:textSize="14sp"
+                android:text="Thika, Kenya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/phoneImage"
+                android:src="@drawable/phonecall"
+                android:layout_alignParentRight="true"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/profileImage"
+                android:layout_below="@id/locationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:tint="@color/colorOrange"
+                    android:src="@drawable/star"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"/>
+
+                <ImageView
+                    android:tint="@color/colorOrange"
+                    android:src="@drawable/star"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"/>
+
+                <ImageView
+                    android:tint="@color/colorOrange"
+                    android:src="@drawable/star"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"/>
+
+                <ImageView
+                    android:tint="@color/colorOrange"
+                    android:src="@drawable/star"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"/>
+
+                <ImageView
+                    tools:src="@drawable/star"
+                    android:src="@drawable/star"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--Section Two-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25">
+
+        <TextView
+            android:id="@+id/accountBalanceValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$77,000"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:id="@+id/accountBalanceTitle"
+            android:layout_above="@id/accountBalanceValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Balance"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <!--Section Three-->
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.58"
+        android:orientation="vertical">
+        <RelativeLayout
+            
+            android:background="@drawable/roundededges"
+            android:elevation="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="10dp"
+            android:layout_centerInParent="true">
+
+            <Refractored.Controls.CircleImageView
+                android:layout_marginRight="15dp"
+                android:id="@+id/profileImage"
+                android:src="@drawable/sisteract"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_toRightOf="@id/profileImage"
+                android:textSize="16sp"
+                android:text="Zazu Zia"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/dateText"
+                android:layout_toRightOf="@id/profileImage"
+                android:layout_below="@id/nameText"
+                android:textSize="14sp"
+                android:text="8-10-2021"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/amountText"
+                android:layout_alignParentRight="true"
+                android:textSize="16sp"
+                android:text="$-7,456"
+                android:textColor="@color/withdrawalRed"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/viewText"
+                android:layout_below="@id/amountText"
+                android:layout_alignParentRight="true"
+                android:textSize="16sp"
+                android:text="view"
+                android:textColor="@color/viewButtonGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:background="@drawable/roundededges"
+            android:elevation="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="10dp"
+            android:layout_centerInParent="true">
+
+            <Refractored.Controls.CircleImageView
+                android:layout_marginRight="15dp"
+                android:id="@+id/profileImage"
+                android:src="@drawable/popsausi"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_toRightOf="@id/profileImage"
+                android:textSize="16sp"
+                android:text="Zazu Zia"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/dateText"
+                android:layout_toRightOf="@id/profileImage"
+                android:layout_below="@id/nameText"
+                android:textSize="14sp"
+                android:text="8-10-2021"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/amountText"
+                android:layout_alignParentRight="true"
+                android:textSize="16sp"
+                android:text="$+14,456"
+                android:textColor="@color/depositBlue"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/viewText"
+                android:layout_below="@id/amountText"
+                android:layout_alignParentRight="true"
+                android:textSize="16sp"
+                android:text="view"
+                android:textColor="@color/viewButtonGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:background="@drawable/roundededges"
+            android:elevation="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="10dp"
+            android:layout_centerInParent="true">
+
+            <Refractored.Controls.CircleImageView
+                android:layout_marginRight="15dp"
+                android:id="@+id/profileImage"
+                android:src="@drawable/benchausi"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_toRightOf="@id/profileImage"
+                android:textSize="16sp"
+                android:text="Zazu Zia"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/dateText"
+                android:layout_toRightOf="@id/profileImage"
+                android:layout_below="@id/nameText"
+                android:textSize="14sp"
+                android:text="8-10-2021"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/amountText"
+                android:layout_alignParentRight="true"
+                android:textSize="16sp"
+                android:text="$+24,456"
+                android:textColor="@color/depositBlue"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/viewText"
+                android:layout_below="@id/amountText"
+                android:layout_alignParentRight="true"
+                android:textSize="16sp"
+                android:text="view"
+                android:textColor="@color/viewButtonGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:backgroundTint="@color/material_grey_300"
+                    android:layout_marginRight="4dp"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="0.5"
+                    android:text="View History"
+                    android:textColor="@android:color/black"
+                    android:textAllCaps="false"/>
+                <Button
+                    android:backgroundTint="@color/material_grey_300"
+                    android:layout_marginLeft="4dp"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="0.5"
+                    android:text="New Transaction"
+                    android:textColor="@android:color/black"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

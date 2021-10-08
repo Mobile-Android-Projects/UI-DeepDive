@@ -3,4 +3,10 @@
     <color name="colorPrimary">#2c3e50</color>
     <color name="colorPrimaryDark">#1B3147</color>
     <color name="colorAccent">#3498db</color>
+  <color name="colorOrange">#f59b42</color>
+  <color name="colorWhiteSolid">#ffff</color>
+  <color name="colorGreyStroke">#cecece</color>
+  <color name="withdrawalRed">#d40f22</color>
+  <color name="viewButtonGreen">#008f18</color>
+  <color name="depositBlue">#08005c</color>
 </resources>
